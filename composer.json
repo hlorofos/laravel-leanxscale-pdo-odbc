@@ -1,0 +1,34 @@
+{
+  "name": "hlorofos/laravel-leanxscale-pdo-odbc",
+  "description": "LeanXscale PDO ODBC driver for Laravel 7+ framework.",
+  "type": "library",
+  "homepage": "https://github.com/hlorofos/laravel-leanxscale-pdo-odbc",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Oleg Khimich",
+      "email": "hlorofos@gmail.com",
+      "homepage": "https://github.com/hlorofos/",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.3",
+    "ext-odbc": "*",
+    "ext-pdo_odbc": "*",
+    "illuminate/database": ">= 7.0",
+    "illuminate/support": ">= 7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "LaravelPdoOdbc\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "LaravelPdoOdbc\\ODBCServiceProvider"
+      ]
+    }
+  }
+}
